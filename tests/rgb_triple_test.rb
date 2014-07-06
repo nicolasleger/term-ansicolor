@@ -3,12 +3,16 @@ require 'test_helper'
 class RgbTripleTest < Test::Unit::TestCase
   include Term::ANSIColor
 
+  def test_clean_string
+    assert_equal nil, String < Term::ANSIColor
+  end
+
   def test_rgb_cast
     rgb = RGBTriple.new(128, 0, 255)
     assert_equal '#8000ff', RGBTriple[ rgb ].html
     assert_equal '#8000ff', RGBTriple[ [ 128, 0, 255 ] ].html
     assert_equal '#8000ff', RGBTriple[ :red => 128, :green => 0, :blue => 255 ].html
-    assert_raise ArgumentError do
+    assert_raises ArgumentError do
       RGBTriple[ nil ]
     end
   end
