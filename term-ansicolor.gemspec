@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Florian Frank"]
-  s.date = "2014-07-06"
+  s.date = "2014-07-10"
   s.description = "This library uses ANSI escape sequences to control the attributes of terminal output"
   s.email = "flori@ping.de"
   s.executables = ["term_cdiff", "term_colortab", "term_decolor", "term_display", "term_mandel"]
